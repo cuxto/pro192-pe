@@ -3,8 +3,8 @@ package data;
 
 
 public class Brick {
-    private double price;
-    private String code;
+    protected double price;
+    protected String code;
     
     public Brick() {
         
@@ -26,6 +26,13 @@ public class Brick {
     public String getCode() {
         return code;
     }
+
+    @Override
+    public String toString() {
+        return  code + "\t" + price;
+    }
+    
+    
     
     
 
